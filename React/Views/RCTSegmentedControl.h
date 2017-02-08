@@ -16,5 +16,6 @@
 @property (nonatomic, copy) NSArray<NSString *> *values;
 @property (nonatomic, assign) NSInteger selectedIndex;
 @property (nonatomic, copy) RCTBubblingEventBlock onChange;
+@property (nonatomic) CGFloat fontSize; // Start Code added on 7/2/2017
 
 @end

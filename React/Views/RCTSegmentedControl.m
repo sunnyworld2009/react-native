@@ -35,6 +35,16 @@
   super.selectedSegmentIndex = _selectedIndex;
 }
 
+// Start Code added on 7/2/2017
+- (void)setFontSize:(CGFloat)fontSize
+{
+  if (fontSize != _fontSize) {
+    _fontSize = fontSize;
+    [self setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:fontSize],NSFontAttributeName, nil] forState:UIControlStateNormal];
+  }
+}
+// End Code added on 7/2/2017
+
 - (void)setSelectedIndex:(NSInteger)selectedIndex
 {
   _selectedIndex = selectedIndex;
